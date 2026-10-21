@@ -1,0 +1,17 @@
+[[probe]]
+name = "default"
+input = [0.4, 0.4, 0.4, 1.0]
+expect = [0.4, 0.4, 0.4, 1.0]
+
+[[probe]]
+name = "minimum"
+input = [0.4, 0.4, 0.4, 1.0]
+at = "min"
+expect = [0.4, 0.4, 0.4, 1.0]
+
+[[probe]]
+name = "maximum"
+input = [0.4, 0.4, 0.4, 1.0]
+at = "max"
+expect = [0.4, 0.4, 0.4, 1.0]
+

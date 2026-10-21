@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7678939228121697556"
+name = "Un-Smear"
+kind = "effect"
+category = "Combo"
+order = 100
+intensity = "amount"
+description = "CapCut 'Un-Smear' (glow)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

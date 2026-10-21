@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7692437603584331016"
+name = "Neon Unravel"
+kind = "effect"
+category = "Intro & Outro"
+order = 100
+intensity = "amount"
+description = "CapCut 'Neon Unravel' (glow)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

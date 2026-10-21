@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-effect-water-ripple"
+name = "Underwater Caustics"
+kind = "effect"
+category = "Distort"
+order = 82
+intensity = "ripple"
+description = "CapCut's submerged fluid underwater refraction ripples and caustic highlights."
+
+[[param]]
+key = "ripple"
+label = "Refraction Power"
+min = 0
+max = 100
+default = 55
+step = 1
+unit = "%"
+
+[[param]]
+key = "speed"
+label = "Flow Speed"
+min = 1
+max = 20
+default = 6
+step = 1
+unit = "Hz"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

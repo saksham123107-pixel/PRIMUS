@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-film-burn"
+name = "Film Burn Light Leak"
+kind = "effect"
+category = "Light"
+order = 32
+intensity = "burn"
+description = "CapCut's organic warm golden amber film burn light leak overlay."
+
+[[param]]
+key = "burn"
+label = "Burn Intensity"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "speed"
+label = "Speed"
+min = 1
+max = 20
+default = 5
+step = 1
+unit = "Hz"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

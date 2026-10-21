@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-trans-lens-flare"
+name = "Flare Sweep Cut"
+kind = "transition"
+category = "Light"
+order = 74
+description = "CapCut's golden anamorphic flare beam sweeping across the cut."
+
+[[param]]
+key = "flare_width"
+label = "Beam Width"
+min = 20
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

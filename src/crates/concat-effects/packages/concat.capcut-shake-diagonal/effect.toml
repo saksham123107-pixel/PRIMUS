@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-shake-diagonal"
+name = "Diagonal Hard Shake"
+kind = "effect"
+category = "Distort"
+order = 62
+intensity = "shake"
+description = "CapCut's angled 45-degree snap shake for heavy hit impacts."
+
+[[param]]
+key = "shake"
+label = "Snap Force"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "frequency"
+label = "Snap Rate"
+min = 2
+max = 25
+default = 14
+step = 1
+unit = "Hz"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

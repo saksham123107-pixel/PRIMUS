@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7668161895576210706"
+name = "Box Flip-In"
+kind = "effect"
+category = "In"
+order = 100
+intensity = "amount"
+description = "CapCut 'Box Flip-In' (glow)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

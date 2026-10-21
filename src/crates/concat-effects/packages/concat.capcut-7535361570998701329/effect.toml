@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7535361570998701329"
+name = "3D Scroll-down"
+kind = "transition"
+category = "Trending"
+order = 100
+description = "CapCut '3D Scroll-down' (wipe transition)." 
+
+[[param]]
+key = "amount"
+label = "Strength"
+min = 0
+max = 1
+default = 0.5
+step = 0.05
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

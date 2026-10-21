@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7681509944964926741"
+name = "Spiral Stair-I"
+kind = "effect"
+category = "In"
+order = 100
+intensity = "amount"
+description = "CapCut 'Spiral Stair-I' (glow)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

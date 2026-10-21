@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7694112545447185672"
+name = "Circle Light"
+kind = "effect"
+category = "In"
+order = 100
+intensity = "amount"
+description = "CapCut 'Circle Light' (glow)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

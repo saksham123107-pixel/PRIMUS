@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7640688562295344405"
+name = "Polaroid Thread"
+kind = "effect"
+category = "Combo"
+order = 100
+intensity = "amount"
+description = "CapCut 'Polaroid Thread' (glow)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

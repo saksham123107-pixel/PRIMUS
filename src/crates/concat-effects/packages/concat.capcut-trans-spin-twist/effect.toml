@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-trans-spin-twist"
+name = "Vortex Spin Cut"
+kind = "transition"
+category = "Spin"
+order = 71
+description = "CapCut's 360-degree rotational vortex twist transition across the cut."
+
+[[param]]
+key = "rotations"
+label = "Rotation Swirl"
+min = 1
+max = 4
+default = 1
+step = 1
+unit = "turns"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

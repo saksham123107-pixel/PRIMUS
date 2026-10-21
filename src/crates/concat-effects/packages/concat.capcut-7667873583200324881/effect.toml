@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7667873583200324881"
+name = "Paint Splash"
+kind = "effect"
+category = "Out"
+order = 100
+intensity = "amount"
+description = "CapCut 'Paint Splash' (glow)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

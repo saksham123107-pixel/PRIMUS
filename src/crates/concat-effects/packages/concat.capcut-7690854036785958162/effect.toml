@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7690854036785958162"
+name = "Crystal Portal"
+kind = "effect"
+category = "Intro & Outro"
+order = 100
+intensity = "amount"
+description = "CapCut 'Crystal Portal' (sharpen)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

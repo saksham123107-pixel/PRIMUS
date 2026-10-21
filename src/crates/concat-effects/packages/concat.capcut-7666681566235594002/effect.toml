@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7666681566235594002"
+name = "Negative Grid"
+kind = "effect"
+category = "Invert"
+order = 100
+intensity = "amount"
+description = "CapCut 'Negative Grid' (invert)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

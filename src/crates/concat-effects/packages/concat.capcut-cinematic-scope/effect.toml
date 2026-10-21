@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-cinematic-scope"
+name = "Cinematic Scope 2.39"
+kind = "effect"
+category = "Cinematic"
+order = 37
+intensity = "feather"
+description = "CapCut's 2.39:1 widescreen anamorphic theatrical letterbox with film tone."
+
+[[param]]
+key = "feather"
+label = "Bar Softness"
+min = 0
+max = 50
+default = 10
+step = 1
+unit = "px"
+
+[[param]]
+key = "film_tone"
+label = "Film Contrast"
+min = 0
+max = 100
+default = 40
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

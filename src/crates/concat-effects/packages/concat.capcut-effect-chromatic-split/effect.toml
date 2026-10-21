@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-effect-chromatic-split"
+name = "Chromatic Split"
+kind = "effect"
+category = "Glitch"
+order = 74
+intensity = "amount"
+description = "Splits the red, green and blue channels apart for a prismatic glitch edge."
+
+[[param]]
+key = "amount"
+label = "Split"
+min = 0
+max = 1
+default = 0.4
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

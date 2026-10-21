@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7502324503830154497"
+name = "Light Graffiti"
+kind = "transition"
+category = "Trending"
+order = 100
+description = "CapCut 'Light Graffiti' (wipe transition)." 
+
+[[param]]
+key = "amount"
+label = "Strength"
+min = 0
+max = 1
+default = 0.5
+step = 0.05
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

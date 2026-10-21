@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7501954871109668112"
+name = "TV Off"
+kind = "effect"
+category = "Glow"
+order = 100
+intensity = "amount"
+description = "CapCut 'TV Off' (glow)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

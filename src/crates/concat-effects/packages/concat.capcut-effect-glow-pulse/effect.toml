@@ -1,0 +1,31 @@
+format = 2
+
+[effect]
+id = "concat.capcut-effect-glow-pulse"
+name = "Glow Pulse"
+kind = "effect"
+category = "Light"
+order = 75
+intensity = "strength"
+description = "Bright highlights breathe with a soft pulsing glow."
+
+[[param]]
+key = "strength"
+label = "Strength"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[[param]]
+key = "speed"
+label = "Speed"
+min = 0.2
+max = 4
+default = 1
+step = 0.1
+unit = "Hz"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

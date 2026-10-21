@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7032223224863658497"
+name = "Stretch and distort"
+kind = "effect"
+category = "Combo"
+order = 100
+intensity = "amount"
+description = "CapCut 'Stretch and distort' (distort)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

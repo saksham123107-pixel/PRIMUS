@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7691549186801569076"
+name = "RGB Shake-I"
+kind = "effect"
+category = "In"
+order = 100
+intensity = "amount"
+description = "CapCut 'RGB Shake-I' (chroma)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7538694520070753537"
+name = "Monster Jaws"
+kind = "transition"
+category = "NEW"
+order = 100
+description = "CapCut 'Monster Jaws' (wipe transition)." 
+
+[[param]]
+key = "amount"
+label = "Strength"
+min = 0
+max = 1
+default = 0.5
+step = 0.05
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

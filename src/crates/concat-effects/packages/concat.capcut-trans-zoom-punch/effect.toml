@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-trans-zoom-punch"
+name = "Zoom Punch"
+kind = "transition"
+category = "Zoom"
+order = 71
+description = "The outgoing shot holds while the incoming one punches in from a punch-in zoom."
+
+[[param]]
+key = "punch"
+label = "Punch"
+min = 0
+max = 100
+default = 55
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

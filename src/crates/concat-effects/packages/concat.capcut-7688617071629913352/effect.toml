@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7688617071629913352"
+name = "Fuzz Decay-I"
+kind = "effect"
+category = "In"
+order = 100
+intensity = "amount"
+description = "CapCut 'Fuzz Decay-I' (glow)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

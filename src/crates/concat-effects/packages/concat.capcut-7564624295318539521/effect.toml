@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7564624295318539521"
+name = "Cyber Flare"
+kind = "transition"
+category = "NEW"
+order = 100
+description = "CapCut 'Cyber Flare' (wipe transition)." 
+
+[[param]]
+key = "amount"
+label = "Strength"
+min = 0
+max = 1
+default = 0.5
+step = 0.05
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

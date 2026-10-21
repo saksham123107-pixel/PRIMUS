@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-filter-teal-orange-pro"
+name = "Blockbuster Teal & Orange"
+kind = "filter"
+category = "Cinematic"
+order = 76
+intensity = "grade_amt"
+description = "CapCut's Hollywood cinematic complementary teal shadows and warm orange skin tones."
+
+[[param]]
+key = "grade_amt"
+label = "Grade Power"
+min = 0
+max = 100
+default = 80
+step = 1
+unit = "%"
+
+[[param]]
+key = "contrast"
+label = "Contrast"
+min = 50
+max = 200
+default = 120
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

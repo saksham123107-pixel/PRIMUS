@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-white-flash"
+name = "White Flash"
+kind = "effect"
+category = "Light"
+order = 21
+intensity = "burst"
+description = "CapCut's signature rhythmic white strobe flash for high-impact beat drops and cuts."
+
+[[param]]
+key = "speed"
+label = "Speed"
+min = 1
+max = 30
+default = 8
+step = 1
+unit = "Hz"
+
+[[param]]
+key = "burst"
+label = "Burst"
+min = 0
+max = 100
+default = 80
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

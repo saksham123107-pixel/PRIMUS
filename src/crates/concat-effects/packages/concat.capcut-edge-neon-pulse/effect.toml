@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-edge-neon-pulse"
+name = "Neon Contour Pulse"
+kind = "effect"
+category = "Stylize"
+order = 44
+intensity = "pulse"
+description = "CapCut's fluorescent pulsating neon contour lines."
+
+[[param]]
+key = "pulse"
+label = "Pulse Rate"
+min = 1
+max = 20
+default = 6
+step = 1
+unit = "Hz"
+
+[[param]]
+key = "thickness"
+label = "Line Width"
+min = 1
+max = 10
+default = 3
+step = 1
+unit = "px"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

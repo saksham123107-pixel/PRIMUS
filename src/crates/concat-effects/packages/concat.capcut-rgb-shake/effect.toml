@@ -1,0 +1,41 @@
+format = 2
+
+[effect]
+id = "concat.capcut-rgb-shake"
+name = "Chromatic Shake"
+kind = "effect"
+category = "Glitch"
+order = 23
+intensity = "shake"
+description = "CapCut's viral TikTok camera shake with directional chromatic aberration displacement."
+
+[[param]]
+key = "shake"
+label = "Shake"
+min = 0
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[[param]]
+key = "speed"
+label = "Speed"
+min = 1
+max = 30
+default = 16
+step = 1
+unit = "Hz"
+
+[[param]]
+key = "split"
+label = "RGB Split"
+min = 0
+max = 50
+default = 12
+step = 1
+unit = "px"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

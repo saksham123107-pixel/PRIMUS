@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7675761077707099410"
+name = "Luminous Sprite"
+kind = "effect"
+category = "Light"
+order = 100
+intensity = "amount"
+description = "CapCut 'Luminous Sprite' (glow)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

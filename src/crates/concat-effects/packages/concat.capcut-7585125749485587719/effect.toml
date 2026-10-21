@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7585125749485587719"
+name = "Pop-up Focus"
+kind = "filter"
+category = "In"
+order = 100
+intensity = "amount"
+description = "CapCut 'Pop-up Focus' (vivid)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

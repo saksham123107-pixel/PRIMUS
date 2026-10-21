@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-diamond-zoom"
+name = "Diamond Zoom"
+kind = "effect"
+category = "Zoom"
+order = 30
+intensity = "amount"
+description = "CapCut's signature 4-point diamond prism radial zoom blur with chromatic fringe."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[[param]]
+key = "dispersion"
+label = "Dispersion"
+min = 0
+max = 100
+default = 40
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

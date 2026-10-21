@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-duotone-cyber"
+name = "Cyber Synth Duotone"
+kind = "filter"
+category = "Stylize"
+order = 49
+intensity = "mix_val"
+description = "CapCut's synthwave neon duotone grading darks to purple and highlights to cyan."
+
+[[param]]
+key = "mix_val"
+label = "Color Mix"
+min = 0
+max = 100
+default = 85
+step = 1
+unit = "%"
+
+[[param]]
+key = "contrast"
+label = "Contrast"
+min = 50
+max = 200
+default = 120
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

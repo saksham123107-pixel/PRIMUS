@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-noir-contrast"
+name = "Noir Film Silver"
+kind = "filter"
+category = "Black & White"
+order = 59
+intensity = "contrast_val"
+description = "CapCut's dramatic silver-gelatin black and white film look with crushed deep shadows."
+
+[[param]]
+key = "contrast_val"
+label = "Contrast"
+min = 50
+max = 200
+default = 140
+step = 1
+unit = "%"
+
+[[param]]
+key = "fade_val"
+label = "Silver Highlight"
+min = 0
+max = 50
+default = 20
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

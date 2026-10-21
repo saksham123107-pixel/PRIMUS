@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7488098106727238929"
+name = "Flashing Veil"
+kind = "transition"
+category = "Trending"
+order = 100
+description = "CapCut 'Flashing Veil' (flash transition)." 
+
+[[param]]
+key = "amount"
+label = "Strength"
+min = 0
+max = 1
+default = 0.5
+step = 0.05
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7579152320290622727"
+name = "90s TV Ad"
+kind = "effect"
+category = "In"
+order = 100
+intensity = "amount"
+description = "CapCut '90s TV Ad' (glow)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

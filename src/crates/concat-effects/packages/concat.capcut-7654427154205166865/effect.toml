@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7654427154205166865"
+name = "Minions Roll"
+kind = "transition"
+category = "Hits"
+order = 100
+description = "CapCut 'Minions Roll' (wipe transition)." 
+
+[[param]]
+key = "amount"
+label = "Strength"
+min = 0
+max = 1
+default = 0.5
+step = 0.05
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

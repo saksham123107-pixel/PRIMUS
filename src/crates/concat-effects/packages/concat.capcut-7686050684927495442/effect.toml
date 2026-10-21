@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7686050684927495442"
+name = "Magnet Shutter"
+kind = "effect"
+category = "In"
+order = 100
+intensity = "amount"
+description = "CapCut 'Magnet Shutter' (glow)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

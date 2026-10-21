@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7689321631579131137"
+name = "Glass Mesh-O"
+kind = "effect"
+category = "Out"
+order = 100
+intensity = "amount"
+description = "CapCut 'Glass Mesh-O' (glow)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

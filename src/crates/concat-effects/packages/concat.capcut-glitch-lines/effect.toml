@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-glitch-lines"
+name = "Cyber Glitch Scanlines"
+kind = "effect"
+category = "Glitch"
+order = 40
+intensity = "density"
+description = "CapCut's digital cyberpunk interface scanlines and signal flicker."
+
+[[param]]
+key = "density"
+label = "Line Density"
+min = 10
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[[param]]
+key = "flicker"
+label = "Signal Noise"
+min = 0
+max = 100
+default = 40
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

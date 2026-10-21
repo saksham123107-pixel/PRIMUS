@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-rgb-split-glitch"
+name = "RGB Wave Glitch"
+kind = "effect"
+category = "Glitch"
+order = 42
+intensity = "split"
+description = "CapCut's horizontal wavy RGB channel dispersion glitch."
+
+[[param]]
+key = "split"
+label = "Split Offset"
+min = 0
+max = 40
+default = 12
+step = 1
+unit = "px"
+
+[[param]]
+key = "wave"
+label = "Wave Distortion"
+min = 0
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

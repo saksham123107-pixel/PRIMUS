@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7602189165425462533"
+name = "Visual Curse"
+kind = "effect"
+category = "Out"
+order = 100
+intensity = "amount"
+description = "CapCut 'Visual Curse' (glow)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

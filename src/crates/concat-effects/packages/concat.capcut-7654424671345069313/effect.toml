@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7654424671345069313"
+name = "Minions Grab"
+kind = "transition"
+category = "Hits"
+order = 100
+description = "CapCut 'Minions Grab' (wipe transition)." 
+
+[[param]]
+key = "amount"
+label = "Strength"
+min = 0
+max = 1
+default = 0.5
+step = 0.05
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

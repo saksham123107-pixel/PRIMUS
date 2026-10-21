@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-swirl-warp"
+name = "Vortex Swirl Warp"
+kind = "effect"
+category = "Distort"
+order = 60
+intensity = "angle_val"
+description = "CapCut's radial vortex whirlpool spiral twisting the center."
+
+[[param]]
+key = "angle_val"
+label = "Twist Angle"
+min = -360
+max = 360
+default = 180
+step = 1
+unit = "deg"
+
+[[param]]
+key = "radius_val"
+label = "Twist Radius"
+min = 10
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

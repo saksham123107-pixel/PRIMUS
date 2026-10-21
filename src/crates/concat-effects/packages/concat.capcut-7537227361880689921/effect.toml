@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7537227361880689921"
+name = "Glass-cutting"
+kind = "transition"
+category = "Hits"
+order = 100
+description = "CapCut 'Glass-cutting' (wipe transition)." 
+
+[[param]]
+key = "amount"
+label = "Strength"
+min = 0
+max = 1
+default = 0.5
+step = 0.05
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

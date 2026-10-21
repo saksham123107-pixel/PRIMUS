@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-motion-shake-y"
+name = "Bounce Shake"
+kind = "effect"
+category = "Distort"
+order = 43
+intensity = "bounce"
+description = "CapCut's vertical camera bounce shake for heavy bass drops."
+
+[[param]]
+key = "bounce"
+label = "Bounce Height"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[[param]]
+key = "frequency"
+label = "Frequency"
+min = 2
+max = 30
+default = 12
+step = 1
+unit = "Hz"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

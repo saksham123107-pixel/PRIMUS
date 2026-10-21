@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-lens-distortion"
+name = "Fisheye Lens Warp"
+kind = "effect"
+category = "Distort"
+order = 38
+intensity = "warp"
+description = "CapCut's action-cam fisheye lens barrel distortion with perimeter chromatic fringing."
+
+[[param]]
+key = "warp"
+label = "Warp"
+min = -100
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[[param]]
+key = "fringe"
+label = "Fringe"
+min = 0
+max = 50
+default = 15
+step = 1
+unit = "px"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

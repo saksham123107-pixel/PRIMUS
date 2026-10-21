@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-blur-slant"
+name = "Slant Oblique Blur"
+kind = "effect"
+category = "Blur"
+order = 65
+intensity = "blur_len"
+description = "CapCut's 45-degree directional optical slant blur."
+
+[[param]]
+key = "blur_len"
+label = "Slant Length"
+min = 1
+max = 40
+default = 15
+step = 1
+unit = "px"
+
+[[param]]
+key = "angle"
+label = "Slant Angle"
+min = 0
+max = 180
+default = 45
+step = 1
+unit = "deg"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

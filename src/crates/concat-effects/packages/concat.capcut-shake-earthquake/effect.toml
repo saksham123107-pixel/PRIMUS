@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-shake-earthquake"
+name = "Earthquake Rumble"
+kind = "effect"
+category = "Distort"
+order = 63
+intensity = "rumble"
+description = "CapCut's chaotic multi-frequency ground earthquake camera rumble."
+
+[[param]]
+key = "rumble"
+label = "Rumble Intensity"
+min = 0
+max = 100
+default = 75
+step = 1
+unit = "%"
+
+[[param]]
+key = "blur_amt"
+label = "Motion Blur"
+min = 0
+max = 100
+default = 40
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

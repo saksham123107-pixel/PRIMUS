@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7663439999181966612"
+name = "LED Fizz-Out"
+kind = "effect"
+category = "Out"
+order = 100
+intensity = "amount"
+description = "CapCut 'LED Fizz-Out' (glow)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

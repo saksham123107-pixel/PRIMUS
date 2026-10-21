@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-chroma-pulse"
+name = "Bass Chroma Pulse"
+kind = "effect"
+category = "Glitch"
+order = 47
+intensity = "pulse"
+description = "CapCut's rhythmic bass-kick chromatic aberration zoom pulse."
+
+[[param]]
+key = "pulse"
+label = "Pulse Power"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "speed"
+label = "Beat Rate"
+min = 1
+max = 20
+default = 8
+step = 1
+unit = "Hz"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

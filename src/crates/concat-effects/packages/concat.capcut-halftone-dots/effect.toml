@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-halftone-dots"
+name = "Comic Halftone"
+kind = "filter"
+category = "Stylize"
+order = 31
+intensity = "dots"
+description = "CapCut's pop-art manga comic halftone dot rasterization filter."
+
+[[param]]
+key = "dots"
+label = "Dot Density"
+min = 10
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[[param]]
+key = "contrast"
+label = "Contrast"
+min = 50
+max = 200
+default = 130
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

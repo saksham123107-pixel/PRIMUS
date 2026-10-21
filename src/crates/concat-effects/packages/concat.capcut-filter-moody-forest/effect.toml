@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-filter-moody-forest"
+name = "Moody Emerald Forest"
+kind = "filter"
+category = "Film"
+order = 79
+intensity = "forest"
+description = "CapCut's deep moody forest emerald green grading with crushed shadows."
+
+[[param]]
+key = "forest"
+label = "Forest Grade"
+min = 0
+max = 100
+default = 80
+step = 1
+unit = "%"
+
+[[param]]
+key = "contrast"
+label = "Contrast"
+min = 50
+max = 200
+default = 130
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

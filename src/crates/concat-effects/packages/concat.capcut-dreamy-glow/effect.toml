@@ -1,0 +1,41 @@
+format = 2
+
+[effect]
+id = "concat.capcut-dreamy-glow"
+name = "Dreamy Glamour"
+kind = "effect"
+category = "Portrait"
+order = 28
+intensity = "glow"
+description = "CapCut's viral dreamy skin glamour glow blending soft diffusion and warm highlight bloom."
+
+[[param]]
+key = "glow"
+label = "Glow"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "warmth"
+label = "Warmth"
+min = 0
+max = 100
+default = 40
+step = 1
+unit = "%"
+
+[[param]]
+key = "radius"
+label = "Radius"
+min = 1
+max = 20
+default = 6
+step = 1
+unit = "px"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

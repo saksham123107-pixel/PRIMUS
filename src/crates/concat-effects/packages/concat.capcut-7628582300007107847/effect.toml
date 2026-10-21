@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7628582300007107847"
+name = "Grid Stardust"
+kind = "effect"
+category = "Combo"
+order = 100
+intensity = "amount"
+description = "CapCut 'Grid Stardust' (twinkle)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

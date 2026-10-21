@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7676309411932982548"
+name = "Stargate Spin"
+kind = "effect"
+category = "Combo"
+order = 100
+intensity = "amount"
+description = "CapCut 'Stargate Spin' (twinkle)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

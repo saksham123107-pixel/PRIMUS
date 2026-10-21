@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-glitch-block"
+name = "Macroblock Glitch"
+kind = "effect"
+category = "Glitch"
+order = 56
+intensity = "blocks"
+description = "CapCut's video compression artifact macroblock glitch."
+
+[[param]]
+key = "blocks"
+label = "Artifact Level"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "size_val"
+label = "Block Size"
+min = 8
+max = 64
+default = 24
+step = 1
+unit = "px"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

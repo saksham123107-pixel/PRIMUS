@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-filter-faded-matte"
+name = "Faded Matte"
+kind = "filter"
+category = "Film"
+order = 72
+intensity = "amount"
+description = "Matte, lifted blacks and a whisper less saturation for a faded film look."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

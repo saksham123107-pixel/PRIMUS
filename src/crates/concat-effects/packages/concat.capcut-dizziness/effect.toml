@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-dizziness"
+name = "Vertigo Ripple Wave"
+kind = "effect"
+category = "Distort"
+order = 52
+intensity = "wave"
+description = "CapCut's vertigo dizziness concentric ripple wave distortion."
+
+[[param]]
+key = "wave"
+label = "Wave Amplitude"
+min = 0
+max = 100
+default = 55
+step = 1
+unit = "%"
+
+[[param]]
+key = "speed"
+label = "Ripple Speed"
+min = 1
+max = 20
+default = 6
+step = 1
+unit = "Hz"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

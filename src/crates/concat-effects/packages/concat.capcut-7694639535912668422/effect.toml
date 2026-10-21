@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7694639535912668422"
+name = "8-Bit Pixel Loading"
+kind = "effect"
+category = "In"
+order = 100
+intensity = "amount"
+description = "CapCut '8-Bit Pixel Loading' (pixelate)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

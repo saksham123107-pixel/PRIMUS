@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-retro-warm-sunset"
+name = "Golden Hour Sunset"
+kind = "filter"
+category = "Film"
+order = 55
+intensity = "warmth"
+description = "CapCut's viral golden hour warm sunset filter with rich amber tones."
+
+[[param]]
+key = "warmth"
+label = "Golden Warmth"
+min = 0
+max = 100
+default = 75
+step = 1
+unit = "%"
+
+[[param]]
+key = "saturation_val"
+label = "Saturation"
+min = 50
+max = 200
+default = 125
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-color-isolated"
+name = "Color Splash Isolation"
+kind = "filter"
+category = "Stylize"
+order = 39
+intensity = "range"
+description = "CapCut's selective color splash retaining target hue while desaturating background."
+
+[[param]]
+key = "target_hue"
+label = "Target Hue"
+min = 0
+max = 360
+default = 0
+step = 1
+unit = "deg"
+
+[[param]]
+key = "range"
+label = "Hue Width"
+min = 10
+max = 90
+default = 35
+step = 1
+unit = "deg"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

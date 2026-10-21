@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7689375930661309697"
+name = "Mono Strip-O"
+kind = "filter"
+category = "Out"
+order = 100
+intensity = "amount"
+description = "CapCut 'Mono Strip-O' (mono)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

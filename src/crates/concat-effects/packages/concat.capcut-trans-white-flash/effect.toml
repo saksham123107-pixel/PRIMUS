@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-trans-white-flash"
+name = "White Flash Cut"
+kind = "transition"
+category = "Light"
+order = 69
+description = "CapCut's signature white strobe flash transition bursting across cut."
+
+[[param]]
+key = "brightness"
+label = "Flash Brightness"
+min = 50
+max = 100
+default = 90
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

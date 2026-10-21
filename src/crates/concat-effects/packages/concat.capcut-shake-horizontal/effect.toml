@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-shake-horizontal"
+name = "Horizontal Twitch Shake"
+kind = "effect"
+category = "Distort"
+order = 61
+intensity = "shake"
+description = "CapCut's high-frequency side-to-side camera twitch with micro-zoom."
+
+[[param]]
+key = "shake"
+label = "Shake Width"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "speed"
+label = "Twitch Speed"
+min = 2
+max = 30
+default = 18
+step = 1
+unit = "Hz"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

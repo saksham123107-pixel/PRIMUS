@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-trans-rgb-tear"
+name = "Chromatic Rip Cut"
+kind = "transition"
+category = "Glitch"
+order = 72
+description = "CapCut's chromatic RGB split rip tearing incoming clip across the frame."
+
+[[param]]
+key = "tear_offset"
+label = "Tear Width"
+min = 5
+max = 40
+default = 16
+step = 1
+unit = "px"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

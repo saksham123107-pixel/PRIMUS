@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-filter-retro-film-grain"
+name = "Analog Film Grain"
+kind = "filter"
+category = "Film"
+order = 75
+intensity = "grain_amt"
+description = "CapCut's organic 35mm moving analog celluloid film grain."
+
+[[param]]
+key = "grain_amt"
+label = "Grain Roughness"
+min = 0
+max = 100
+default = 55
+step = 1
+unit = "%"
+
+[[param]]
+key = "size_val"
+label = "Grain Size"
+min = 1
+max = 4
+default = 1
+step = 1
+unit = "px"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

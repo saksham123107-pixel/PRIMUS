@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-radial-rays"
+name = "Radiant God Rays"
+kind = "effect"
+category = "Light"
+order = 35
+intensity = "rays"
+description = "CapCut's heavenly volumetric radiant light rays shooting from center highlights."
+
+[[param]]
+key = "rays"
+label = "Ray Brightness"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "decay"
+label = "Length"
+min = 50
+max = 95
+default = 85
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

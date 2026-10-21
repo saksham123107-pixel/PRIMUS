@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-vivid-hdr"
+name = "Vivid Clarity HDR"
+kind = "filter"
+category = "Clean"
+order = 58
+intensity = "clarity"
+description = "CapCut's punchy HDR clarity enhancement and micro-contrast booster."
+
+[[param]]
+key = "clarity"
+label = "Clarity Boost"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "vibrance_val"
+label = "Vibrance"
+min = 0
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

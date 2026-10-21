@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7678944463615446293"
+name = "Orb Warp"
+kind = "effect"
+category = "Combo"
+order = 100
+intensity = "amount"
+description = "CapCut 'Orb Warp' (distort)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

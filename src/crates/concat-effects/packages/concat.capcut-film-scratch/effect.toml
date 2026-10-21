@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-film-scratch"
+name = "8mm Film Scratches"
+kind = "effect"
+category = "Retro"
+order = 50
+intensity = "scratches"
+description = "CapCut's vintage 8mm film vertical projector scratch lines and frame jitter."
+
+[[param]]
+key = "scratches"
+label = "Scratch Rate"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "jitter"
+label = "Frame Jitter"
+min = 0
+max = 100
+default = 30
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

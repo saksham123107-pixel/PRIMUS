@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-light-leak-rainbow"
+name = "Prism Rainbow Leak"
+kind = "effect"
+category = "Light"
+order = 53
+intensity = "leak"
+description = "CapCut's rainbow prismatic spectral flare curving across the frame."
+
+[[param]]
+key = "leak"
+label = "Flare Brightness"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "angle"
+label = "Arc Angle"
+min = 0
+max = 360
+default = 45
+step = 1
+unit = "deg"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

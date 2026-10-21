@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7693164607346707720"
+name = "Light Sweep"
+kind = "effect"
+category = "Light"
+order = 100
+intensity = "amount"
+description = "CapCut 'Light Sweep' (glow)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

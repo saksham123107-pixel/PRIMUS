@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-filter-cyber-purple"
+name = "Nightclub Ultraviolet"
+kind = "filter"
+category = "Stylize"
+order = 80
+intensity = "purple_amt"
+description = "CapCut's neon ultraviolet nightclub wash turning lights to electric violet."
+
+[[param]]
+key = "purple_amt"
+label = "UV Intensity"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "saturation_boost"
+label = "Saturation"
+min = 50
+max = 200
+default = 135
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

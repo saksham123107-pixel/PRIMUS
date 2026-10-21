@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-6830302168751280648"
+name = "Pirate ship 1"
+kind = "effect"
+category = "Combo"
+order = 100
+intensity = "amount"
+description = "CapCut 'Pirate ship 1' (glow)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

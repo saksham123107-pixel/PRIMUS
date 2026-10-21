@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7529391160272375041"
+name = "Shutter Flash"
+kind = "transition"
+category = "Trending"
+order = 100
+description = "CapCut 'Shutter Flash' (flash transition)." 
+
+[[param]]
+key = "amount"
+label = "Strength"
+min = 0
+max = 1
+default = 0.5
+step = 0.05
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

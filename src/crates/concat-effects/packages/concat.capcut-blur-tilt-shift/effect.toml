@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-blur-tilt-shift"
+name = "Miniature Tilt Shift"
+kind = "effect"
+category = "Blur"
+order = 68
+intensity = "blur_depth"
+description = "CapCut's miniature diorama horizontal focus band with deep top and bottom blur."
+
+[[param]]
+key = "blur_depth"
+label = "Blur Depth"
+min = 1
+max = 30
+default = 14
+step = 1
+unit = "px"
+
+[[param]]
+key = "focus_pos"
+label = "Focus Line"
+min = 10
+max = 90
+default = 50
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

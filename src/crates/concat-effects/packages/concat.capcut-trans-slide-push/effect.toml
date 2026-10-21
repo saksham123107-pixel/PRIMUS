@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-trans-slide-push"
+name = "Slide Push Cut"
+kind = "transition"
+category = "Slide"
+order = 73
+description = "CapCut's smooth directional horizontal slide push transition."
+
+[[param]]
+key = "direction"
+label = "Direction (1=L, 2=R)"
+min = 1
+max = 2
+default = 1
+step = 1
+unit = ""
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

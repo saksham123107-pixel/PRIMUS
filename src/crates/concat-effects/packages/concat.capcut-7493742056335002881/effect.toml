@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7493742056335002881"
+name = "Shake & Pass"
+kind = "transition"
+category = "Trending"
+order = 100
+description = "CapCut 'Shake & Pass' (shake transition)." 
+
+[[param]]
+key = "amount"
+label = "Strength"
+min = 0
+max = 1
+default = 0.5
+step = 0.05
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

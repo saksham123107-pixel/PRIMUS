@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-shake-speed-glitch"
+name = "Speed Step Shake"
+kind = "effect"
+category = "Glitch"
+order = 64
+intensity = "step_force"
+description = "CapCut's stepped erratic jump-frame camera snap shake."
+
+[[param]]
+key = "step_force"
+label = "Step Force"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[[param]]
+key = "fps"
+label = "Step Rate"
+min = 4
+max = 30
+default = 12
+step = 1
+unit = "fps"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

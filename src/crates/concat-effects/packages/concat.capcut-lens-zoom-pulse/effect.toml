@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-lens-zoom-pulse"
+name = "Optic Zoom Punch"
+kind = "effect"
+category = "Zoom"
+order = 57
+intensity = "punch"
+description = "CapCut's dramatic dynamic optical zoom punch-in and snap-back."
+
+[[param]]
+key = "punch"
+label = "Punch Scale"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[[param]]
+key = "speed"
+label = "Punch Speed"
+min = 1
+max = 15
+default = 5
+step = 1
+unit = "Hz"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

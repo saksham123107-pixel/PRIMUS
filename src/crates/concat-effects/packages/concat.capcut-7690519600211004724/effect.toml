@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7690519600211004724"
+name = "Chroma Veil-I"
+kind = "effect"
+category = "In"
+order = 100
+intensity = "amount"
+description = "CapCut 'Chroma Veil-I' (chroma)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

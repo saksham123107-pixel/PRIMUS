@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-black-flash"
+name = "Black Flash"
+kind = "effect"
+category = "Light"
+order = 41
+intensity = "drop"
+description = "CapCut's rhythmic black dip flash for hard-hitting beat cuts."
+
+[[param]]
+key = "speed"
+label = "Speed"
+min = 1
+max = 30
+default = 8
+step = 1
+unit = "Hz"
+
+[[param]]
+key = "drop"
+label = "Black Level"
+min = 0
+max = 100
+default = 90
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

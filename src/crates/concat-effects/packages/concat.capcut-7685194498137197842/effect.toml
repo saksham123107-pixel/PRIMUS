@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7685194498137197842"
+name = "Heart Pulse"
+kind = "effect"
+category = "Light"
+order = 100
+intensity = "amount"
+description = "CapCut 'Heart Pulse' (glow)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

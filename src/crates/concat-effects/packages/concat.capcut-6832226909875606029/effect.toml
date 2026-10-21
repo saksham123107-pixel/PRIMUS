@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-6832226909875606029"
+name = "Funhouse mirror 2"
+kind = "effect"
+category = "Combo"
+order = 100
+intensity = "amount"
+description = "CapCut 'Funhouse mirror 2' (glow)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

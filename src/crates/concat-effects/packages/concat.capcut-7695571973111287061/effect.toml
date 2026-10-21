@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-7695571973111287061"
+name = "Snack Game IN"
+kind = "effect"
+category = "In"
+order = 100
+intensity = "amount"
+description = "CapCut 'Snack Game IN' (glow)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-thermal"
+name = "Thermal Vision"
+kind = "filter"
+category = "Stylize"
+order = 25
+intensity = "thermal_mix"
+description = "CapCut's thermal heatmap vision filter mapping brightness to infrared gradient."
+
+[[param]]
+key = "thermal_mix"
+label = "Mix"
+min = 0
+max = 100
+default = 90
+step = 1
+unit = "%"
+
+[[param]]
+key = "contrast"
+label = "Contrast"
+min = 50
+max = 200
+default = 120
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.capcut-color-invert-edge"
+name = "Neon Sketch Outline"
+kind = "filter"
+category = "Stylize"
+order = 51
+intensity = "blend"
+description = "CapCut's inverted pencil line art and glowing sketch filter."
+
+[[param]]
+key = "blend"
+label = "Sketch Mix"
+min = 0
+max = 100
+default = 85
+step = 1
+unit = "%"
+
+[[param]]
+key = "sensitivity"
+label = "Sensitivity"
+min = 10
+max = 100
+default = 40
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

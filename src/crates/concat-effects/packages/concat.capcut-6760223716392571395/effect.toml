@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.capcut-6760223716392571395"
+name = "Fall Bottom Left"
+kind = "effect"
+category = "Combo"
+order = 100
+intensity = "amount"
+description = "CapCut 'Fall Bottom Left' (glow)."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 1
+default = 0.6
+step = 0.05
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"
