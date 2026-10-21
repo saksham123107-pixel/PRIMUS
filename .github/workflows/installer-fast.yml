@@ -1,0 +1,20 @@
+name: Installer (fast)
+
+# A person-triggerable shortcut that runs build-app.yml directly, skipping
+# release.yml's serialized CI gate, so a device's installer uploads as soon
+# as that matrix job finishes instead of after every test job goes green.
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: The ref to build (branch, tag or SHA)
+        required: false
+        default: main
+
+jobs:
+  build:
+    uses: ./.github/workflows/build-app.yml
+    with:
+      ref: ${{ inputs.ref }}
+    secrets: inherit
